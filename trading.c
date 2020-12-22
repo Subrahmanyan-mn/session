@@ -42,7 +42,7 @@ Queue* queue_add(Queue *q,char share_name[], char date[], int32_t price,int32_t 
 
     return q;
 }
-Queue* queue_delete(Queue *q, QueueResult *res){
+Queue* queue_delete(Queue *q, Queue_Result *res){
     assert( q != NULL );
 
     if (q->count != 0){

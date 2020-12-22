@@ -40,8 +40,8 @@ struct _queueResult_
 Queue queue_new (uint32_t size);
 uint8_t queue_full(Queue *q);
 uint8_t queue_empty(Queue *q);
-Queue* queue_add(Queue *q,char share_name[], char date[], int32_t price,int32_t quantity, QueueResult *res);
-Queue* queue_delete(Queue *q, QueueResult *res);
+Queue* queue_add(Queue *q,char share_name[], char date[], int32_t price,int32_t quantity, Queue_Result *res);
+Queue* queue_delete(Queue *q, Queue_Result *res);
 uint32_t queue_length(Queue *q);
 
 
